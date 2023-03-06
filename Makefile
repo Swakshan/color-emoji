@@ -14,7 +14,7 @@
 
 EMOJI = AppleColorEmoji
 EMOJI_WINDOWS = AppleColorEmoji_WindowsCompatible
-font: $(EMOJI).ttf $(EMOJI_WINDOWS).ttf
+all: $(EMOJI).ttf $(EMOJI_WINDOWS).ttf
 
 CFLAGS = -std=c99 -Wall -Wextra `pkg-config --cflags --libs cairo`
 LDFLAGS = -lm `pkg-config --libs cairo`
